@@ -1,5 +1,5 @@
 # change the following variables according to the current project
-project = Tuma_Salve-Regina_A_Ed_K_8
+project = Tuma_Salve_Regina_A_Ed_K_8
 notes = trb1 trb2 vl1 vl2 S A T B org
 scores = full_score trb1 trb2 vl1 vl2 coro b org
 

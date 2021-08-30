@@ -47,7 +47,7 @@
     \header {
       title = "S A L V E   R E G I N A"
     }
-    \paper { indent = 2\cm }
+    \paper { indent = 2.5\cm }
     \score {
       <<
         \new Staff {
