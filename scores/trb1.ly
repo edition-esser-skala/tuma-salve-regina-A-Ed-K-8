@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "vl 1"
+    instrumentName = "trb 1"
   }
 }
 
@@ -51,8 +51,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \SalveViolinoI
+          \set Staff.instrumentName = "Trombone I"
+          \SalveTromboneI
         }
       >>
     }
