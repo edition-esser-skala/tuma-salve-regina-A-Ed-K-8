@@ -1,23 +1,12 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
-
-\paper {
-  #(set-paper-size "a4landscape")
-  top-margin = 1\cm
-  bottom-margin = .5\cm
-  outer-margin = 2\cm
-  inner-margin = 1.5\cm
-  indent = 1\cm
-}
-
-#(set-global-staff-size 15.87)
+\include "score_settings/full-score.ly"
 
 \book {
   \bookpart {
-    \header {
-      title = "S A L V E   R E G I N A"
-    }
+    \section "Salve Regina"
+    \addTocEntry
     \paper { indent = 3\cm }
     \score {
       <<
@@ -49,25 +38,19 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \SalveSoprano }
           }
           \new Lyrics \lyricsto Soprano \SalveSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \SalveAlto }
           }
           \new Lyrics \lyricsto Alto \SalveAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \SalveTenore }
           }
           \new Lyrics \lyricsto Tenore \SalveTenoreLyrics
