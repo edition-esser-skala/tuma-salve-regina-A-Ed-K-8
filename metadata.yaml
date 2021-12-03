@@ -1,12 +1,16 @@
-composer: Tůma, František Ignác Antonín
+composer:
+  last: Tůma
+  first: František Ignác Antonín
 title: Salve Regina
 genre: antiphon
 scoring: S (solo), S, A, T, B (coro), 2 trb, 2 vl, b, org
+license: cc-by-sa-4.0
 sources:
   B1:
     siglum: A-Ed
     shelfmark: K 8
     rism: 600038567
     url: http://dommusikarchiv.martinus.at/site/werkverzeichnis/gallery/532.html
+    license: public domain
     principal: true
 imslp: Salve_Regina_(Tůma,_František_Ignác_Antonín)
